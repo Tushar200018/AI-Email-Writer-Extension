@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Mail Easy",
+    "version": "1.0.1",
+    "author": "tushargoel.tg@gmail.com",
+    "description": "This extension auto-generates a mail based on the Subject and some other details provided by the user.",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Mail Easy"
+    },
+    "permissions":["tabs","https://mail.google.com/*"]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mail Easy</title>
+</head>
+<body>
+    <div class="loading">
+        <h2>Your Email is getting generated, Please be patient</h2>
+        <span class="loader"></span>
+    </div>
+    <div id="appContainer">
+        <h2>Fill in the below details accurately to get a well written email</h2>
+        <form id="mailDetails">
+            <div class="inputGroup">
+                <label for="audience">Who is the audience for this email?</label>
+                <input type="text" id="audience" required placeholder="Ex: the email is going to my boss.">
+            </div>
+
+            <div class="inputGroup">
+                <label for="purpose">What is the purpose of the email?</label>
+                <textarea type="text" id="purpose" cols="30" rows="3" required placeholder="Ex: The purpose of the email is to request time off for next week."></textarea>
+            </div>
+
+            <div class="inputGroup">
+                <label for="tone">What tone should be used in the email?</label>
+                <input type="text" id="tone" placeholder="Ex: Formal, Informal, Friendly or Direct Tone.">
+            </div>
+
+            <div class="inputGroup">
+                <label for="specifics">What information should be included in the email?</label>
+                <textarea type="text" id="specifics" cols="30" rows="5" placeholder="Ex: I need to include the dates I want off, the reason for the request, and any important details about my work that week."></textarea>
+            </div>
+
+            <div class="btnDiv">
+                <button type="submit">Generate Mail</button>
+            </div>
+        </form>
+    </div>
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

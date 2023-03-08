@@ -1,0 +1,173 @@
+body{
+    background-color: #232430;
+}
+
+#appContainer{
+    padding: 0 3px 8px;
+    min-width: 323px;
+
+}
+
+.inputGroup{
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 9px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 16px;
+}
+
+input{
+    height: 24px;
+}
+
+input, textarea{
+    border: 1px solid white;
+    border-radius: 2px;
+    outline: none;
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+input:focus-visible, textarea:focus-visible{
+    border: 2px solid #62DFF4;
+}
+input::placeholder, textarea::placeholder {
+    color: grey;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+h2{
+    letter-spacing: 1px;
+    color: #62DFF4;
+}
+
+button{
+    color: #62DFF4;
+    border: 1px solid #62DFF4;
+    background: transparent;
+    padding: 9px 29px;
+    border-radius: 0.25rem;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btnDiv{
+    text-align: center;
+}
+.loading{
+    display: none;
+    min-width: 278px;
+    flex-direction: column;
+    align-items: center;
+}
+.loading h2{
+    text-align: center;
+}
+
+.loader {
+    height: 4px;
+    width: 4px;
+    color: #fff;
+    display: block;
+    margin-block: 45px 33px;
+    box-shadow: -10px -10px 0 5px,
+                -10px -10px 0 5px,
+                -10px -10px 0 5px,
+                -10px -10px 0 5px;
+    animation: loader-38 6s infinite;
+  }
+
+  @keyframes loader-38 {
+    0% {
+      box-shadow: -10px -10px 0 5px,
+                  -10px -10px 0 5px,
+                  -10px -10px 0 5px,
+                  -10px -10px 0 5px;
+    }
+    8.33% {
+      box-shadow: -10px -10px 0 5px,
+                  10px -10px 0 5px,
+                  10px -10px 0 5px,
+                  10px -10px 0 5px;
+    }
+    16.66% {
+      box-shadow: -10px -10px 0 5px,
+                  10px -10px 0 5px,
+                  10px 10px 0 5px,
+                  10px 10px 0 5px;
+    }
+    24.99% {
+      box-shadow: -10px -10px 0 5px,
+                  10px -10px 0 5px,
+                  10px 10px 0 5px,
+                  -10px 10px 0 5px;
+    }
+    33.32% {
+      box-shadow: -10px -10px 0 5px,
+                  10px -10px 0 5px,
+                  10px 10px 0 5px,
+                  -10px -10px 0 5px;
+    }
+    41.65% {
+      box-shadow: 10px -10px 0 5px,
+                  10px -10px 0 5px,
+                  10px 10px 0 5px,
+                  10px -10px 0 5px;
+    }
+    49.98% {
+      box-shadow: 10px 10px 0 5px,
+                10px 10px 0 5px,
+                10px 10px 0 5px,
+                10px 10px 0 5px;
+    }
+    58.31% {
+      box-shadow: -10px 10px 0 5px,
+                  -10px 10px 0 5px,
+                  10px 10px 0 5px,
+                  -10px 10px 0 5px;
+    }
+    66.64% {
+      box-shadow: -10px -10px 0 5px,
+                  -10px -10px 0 5px,
+                  10px 10px 0 5px,
+                  -10px 10px 0 5px;
+    }
+    74.97% {
+      box-shadow: -10px -10px 0 5px,
+                  10px -10px 0 5px,
+                  10px 10px 0 5px,
+                  -10px 10px 0 5px;
+    }
+    83.3% {
+      box-shadow: -10px -10px 0 5px,
+                  10px 10px 0 5px,
+                  10px 10px 0 5px,
+                  -10px 10px 0 5px;
+    }
+    91.63% {
+      box-shadow: -10px -10px 0 5px,
+                  -10px 10px 0 5px,
+                  -10px 10px 0 5px,
+                  -10px 10px 0 5px;
+    }
+    100% {
+      box-shadow: -10px -10px 0 5px,
+                  -10px -10px 0 5px,
+                  -10px -10px 0 5px,
+                  -10px -10px 0 5px;
+    }
+  }
+
