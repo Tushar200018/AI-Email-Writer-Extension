@@ -21,8 +21,6 @@ var requestOptions = {
 const fetchMail = async ()=>{
     const loading = document.querySelector(".loading");
     const appContainer=document.querySelector("#appContainer");
-    console.log(loading);
-    console.log(appContainer);
     try{
         loading.style.display="flex";
         appContainer.style.display="none";
@@ -31,13 +29,15 @@ const fetchMail = async ()=>{
         const mailBody = data.choices[0].text;
         messageBody = encodeURIComponent(mailBody);
         const composeUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&body=${messageBody}`;
-        chrome.tabs.query({ url: 'https://mail.google.com/*' }, tabs => {
+        chrome.tabs.query({ url: 'https://mail.google.com/*', currentWindow:true}, tabs => {
         if (tabs.length > 0) {
             // If the Gmail tab is already open, update the URL to open the compose section with the pre-filled body
             const tabId = tabs[0].id;
+            console.log("gmail is present",messageBody);
             chrome.tabs.update(tabId, { url: composeUrl,active: true});
         } else {
             // If the Gmail tab is not open, create a new tab with the compose URL
+            console.log("gmail is absent",messageBody);
             chrome.tabs.create({ url: composeUrl });
         }
         });
